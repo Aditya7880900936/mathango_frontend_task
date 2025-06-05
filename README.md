@@ -65,19 +65,19 @@ src/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/jee-pyq-explorer.git
-cd jee-pyq-explorer
+git clone https://github.com/Aditya7880900936/mathango_frontend_task.git
+cd mathango_frontend_task
 ```
 
 ### 2. Install Dependencies
 
-```bash
+```
 npm install
 ```
 
 ### 3. Run the Development Server
 
-```bash
+```
 npm run dev
 ```
 
