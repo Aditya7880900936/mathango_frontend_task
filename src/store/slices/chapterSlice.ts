@@ -22,6 +22,7 @@ export const fetchChapters = createAsyncThunk<Chapter[], string>(
 
       return filtered
     } catch (error) {
+      console.error('Error loading chapters:', error)
       throw new Error('Failed to load mock chapters data')
     }
   }

@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import Header from '@/components/Header/Header'
 import Sidebar from '@/components/Sidebar/Sidebar'
 import MainContent from '@/components/MainContent/MainContent'
-import { AppDispatch } from '@/store/store'
+import { AppDispatch, RootState } from '@/store/store'
 import { fetchChapters } from '@/store/slices/chapterSlice'
 
 export default function Home() {
   const dispatch = useDispatch<AppDispatch>()
-  const selectedSubject = useSelector((state: any) => state.chapters.selectedSubject)
+  const selectedSubject = useSelector((state: RootState) => state.chapters.selectedSubject)
 
   useEffect(() => {
     if (selectedSubject) {

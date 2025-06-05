@@ -5,6 +5,7 @@ import { ChevronRight } from "lucide-react";
 import type { RootState, Subject } from "../../types";
 import { setSelectedSubject } from "@/store/slices/chapterSlice";
 import { AppDispatch } from "@/store/store";
+import Image from "next/image";
 
 export default function Sidebar() {
   const dispatch = useDispatch<AppDispatch>();
@@ -24,7 +25,7 @@ export default function Sidebar() {
       <div className="mb-6">
         <div className="flex items-center space-x-2 mb-2">
             <div className="w-8 h-8 bg-transparent rounded flex items-center justify-center">
-              <img
+              <Image
                 src="/exam-logo.png"
                 alt="Exam Logo"
                 className="w-4 h-4 object-contain"
