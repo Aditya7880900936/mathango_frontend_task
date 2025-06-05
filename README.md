@@ -1,6 +1,9 @@
+
 # 📘 JEE Main Chapter-wise PYQ Explorer
 
-A responsive, theme-aware, chapter-wise Previous Year Questions (PYQ) explorer for JEE Main, built using **Next.js (App Router)**, **Tailwind CSS**, **Redux**, **shadcn/ui**, and **Framer Motion**.
+A responsive, theme-aware, chapter-wise Previous Year Questions (PYQ) explorer for JEE Main, built using **Next.js (App Router)**, **Tailwind CSS**, **Redux Toolkit**, **shadcn/ui**, and **Framer Motion**.
+
+---
 
 ## ✨ Features
 
@@ -14,47 +17,46 @@ A responsive, theme-aware, chapter-wise Previous Year Questions (PYQ) explorer f
 - 🌗 **Dark Mode** — Theme switcher based on system preference or manual toggle.
 - 📱 **Fully Responsive** — Smooth experience across all screen sizes.
 - 📊 **Data-Driven UI** — Dynamically renders chapter stats from mock JSON.
-- 🎨 **Pixel-Perfect UI** — UI closely follows the Figma design with accurate colors, typography, spacing, and layout.
-- 🧩 **Chapter Icons** — Icons assigned from [Phosphor Icons](https://phosphoricons.com/) randomly to each chapter.
-- 🚀 **Smooth Animations** — Built-in page transitions and animated components using **Framer Motion**.
+- 🎨 **Pixel-Perfect UI** — Matches the Figma design with accurate colors, spacing, and layout.
+- 🧩 **Chapter Icons** — Randomly assigned icons from [Phosphor Icons](https://phosphoricons.com/) for each chapter.
+- 🚀 **Smooth Animations** — Transitions and interactions enhanced using **Framer Motion**.
 - 📂 **Subject-based Routing** — Separate pages for Physics, Chemistry, and Mathematics.
 
 ---
 
 ## 📂 Folder Structure
 
-
+```
 src/
-├── app/ # Next.js App Router structure
-│ ├── favicon.ico
-│ ├── globals.css
-│ ├── layout.tsx
-│ ├── page.tsx
-│ └── providers.tsx # Theme & Redux providers
+├── app/                     # Next.js App Router structure
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── providers.tsx        # Theme & Redux providers
 │
-├── components/ # UI components
-│ ├── Header/
-│ ├── MainContent/
-│ ├── Sidebar/
-│ └── ui/ # Reusable UI components (buttons, icons, etc.)
+├── components/              # UI components
+│   ├── Header/
+│   ├── MainContent/
+│   ├── Sidebar/
+│   └── ui/                  # Reusable UI components
 │
-├── contexts/ # Theme context (light/dark mode)
-│ └── ThemeContext.tsx
+├── contexts/                # Theme context (light/dark mode)
+│   └── ThemeContext.tsx
 │
 ├── Data/
-│ └── data.ts # Mock JSON data
+│   └── data.ts              # Mock JSON data
 │
 ├── lib/
-│ └── utils.ts # Utility functions
+│   └── utils.ts             # Utility functions
 │
-├── store/ # Redux store and slices
-│ ├── slices/
-│ └── store.ts
+├── store/                   # Redux store and slices
+│   ├── slices/
+│   └── store.ts
 │
-└── types/ # TypeScript types
-└── index.ts
-
-
+└── types/                   # TypeScript types
+    └── index.ts
+```
 
 ---
 
@@ -65,46 +67,55 @@ src/
 ```bash
 git clone https://github.com/your-username/jee-pyq-explorer.git
 cd jee-pyq-explorer
+```
 
+### 2. Install Dependencies
 
-### 2. Install Dependancies
-
+```bash
 npm install
+```
 
 ### 3. Run the Development Server
 
+```bash
 npm run dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-### Tech Stack
-Framework: Next.js (App Router)
+---
 
-Styling: Tailwind CSS
+## 🧱 Tech Stack
 
-Components: shadcn/ui
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Icons**: Phosphor Icons
+- **State Management**: Redux Toolkit
+- **Animations**: Framer Motion
 
-Icons: Phosphor Icons
+---
 
-State Management: Redux Toolkit
+## ✅ Behavioral Requirements Implemented
 
-Animations: Framer Motion
+- ✅ Filters update chapter count and list in real-time
+- ✅ "Weak Chapters" and "Not Started" filters use mock logic
+- ✅ All filters are multi-selectable
+- ✅ Sorting toggle with visual indicators (arrows + color)
+- ✅ Dynamic extraction of unique Classes & Units from data
+- ✅ Clean, reusable state management with Redux Toolkit
 
-### Behavioral Requirements Implemented
-Filters update count and list in real-time
+---
 
-"Weak Chapters" and "Not Started" apply mock logic filtering
+## 🌍 Deployment
 
-All filters are multi-selectable
+Live URL (Vercel):  
+👉 [https://mathango-frontend-task-omega.vercel.app/](https://mathango-frontend-task-omega.vercel.app/)
 
-Sorting and visual indicators (arrows with colors) implemented
+---
 
-Extracted unique Classes & Units dynamically from data
+## 📜 License
 
-Clean, reusable state management using Redux
+This project was developed for a frontend internship task. All assets are for evaluation/demo purposes only.
 
-
-
-
-###Deployment
-
-Live URL (Vercel): https://mathango-frontend-task-omega.vercel.app/
+---
