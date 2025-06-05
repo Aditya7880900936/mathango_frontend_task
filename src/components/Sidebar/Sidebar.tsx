@@ -20,22 +20,24 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-full md:w-80 bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 p-4">
+    <aside className="w-full md:w-80 bg-gray-50 dark:bg-gray-900 p-4 ">
       {/* Header Section */}
       <div className="mb-6">
-        <div className="flex items-center space-x-2 mb-2">
+        <div className="flex items-center space-x-2 mb-2 justify-center">
             <div className="w-8 h-8 bg-transparent rounded flex items-center justify-center">
               <Image
                 src="/exam-logo.png"
                 alt="Exam Logo"
                 className="w-4 h-4 object-contain"
+                width={40}
+                height={40}
               />
             </div>
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
             JEE Main
           </h1>
         </div>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
+        <p className="text-sm text-gray-500 dark:text-gray-400 flex justify-center">
           2025 - 2009 | 173 Papers | 15825 Qs
         </p>
       </div>

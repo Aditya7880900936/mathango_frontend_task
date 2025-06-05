@@ -90,7 +90,9 @@ export default function ChapterCard({ chapter, index, onClick }: ChapterCardProp
 
           <span>2024: {chapter.yearWiseQuestionCount["2024"] || 0}Qs</span>
 
-          <span className="text-gray-900 dark:text-white font-medium">
+          <span className="text-gray-300 dark:text-gray-600 hidden sm:inline">|</span>
+
+          <span className="text-[#505d79] dark:text-white font-medium">
             {solvedQuestions}/{totalQuestions} Qs
           </span>
         </div>

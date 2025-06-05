@@ -10,7 +10,7 @@ export default function MainContent() {
   const selectedSubject = useSelector((state: RootState) => state.chapters.selectedSubject)
 
   return (
-    <main className="flex-1 p-6">
+    <main className="flex-1 p-6 md:border-l border-gray-200 dark:border-gray-700">
       <ContentHeader subject={selectedSubject} />
       <FilterSection />
       <ChapterList />
